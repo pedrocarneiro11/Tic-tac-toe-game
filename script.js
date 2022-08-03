@@ -7,7 +7,7 @@ let playerTwo = "O";
 
 var flag = 1;
 
-let b1, b2, b3, b4, b5, b6, b7, b8, b9;
+var b1, b2, b3, b4, b5, b6, b7, b8, b9;
 
 b1 = document.getElementById("b1").value;
 b2 = document.getElementById("b2").value;
@@ -21,131 +21,123 @@ b9 = document.getElementById("b9").value;
 
 // funções para mudar o simbolo
 function mudarSimbolo1() {
-
     if (flag == 1) {
-        document.getElementById("b1").value = playerOne;
+        document.getElementById("b1").innerHTML = playerOne;
         document.getElementById("b1").disabled = true;
         flag = 0;
     }
     else {
-        document.getElementById("b1").value = playerTwo;
+        document.getElementById("b1").innerHTML = playerTwo;
         document.getElementById("b1").disabled = true;
         flag = 1;
     }
 }
 
 function mudarSimbolo2() {
-
     if (flag == 1) {
-        document.getElementById("b2").value = playerOne;
+        document.getElementById("b2").innerHTML = playerOne;
         document.getElementById("b2").disabled = true;
         flag = 0;
     }
     else {
-        document.getElementById("b2").value = playerTwo;
+        document.getElementById("b2").innerHTML = playerTwo;
         document.getElementById("b2").disabled = true;
         flag = 1;
     }
 }
 
 function mudarSimbolo3() {
-
     if (flag == 1) {
-        document.getElementById("b3").value = playerOne;
+        document.getElementById("b3").innerHTML = playerOne;
         document.getElementById("b3").disabled = true;
         flag = 0;
     }
     else {
-        document.getElementById("b3").value = playerTwo;
+        document.getElementById("b3").innerHTML = playerTwo;
         document.getElementById("b3").disabled = true;
         flag = 1;
     }
 }
 
 function mudarSimbolo4() {
-
     if (flag == 1) {
-        document.getElementById("b4").value = playerOne;
+        document.getElementById("b4").innerHTML = playerOne;
         document.getElementById("b4").disabled = true;
         flag = 0;
     }
     else {
-        document.getElementById("b4").value = playerTwo;
+        document.getElementById("b4").innerHTML = playerTwo;
         document.getElementById("b4").disabled = true;
         flag = 1;
     }
 }
 
 function mudarSimbolo5() {
-
     if (flag == 1) {
-        document.getElementById("b5").value = playerOne;
+        document.getElementById("b5").innerHTML = playerOne;
         document.getElementById("b5").disabled = true;
         flag = 0;
     }
     else {
-        document.getElementById("b5").value = playerTwo;
+        document.getElementById("b5").innerHTML = playerTwo;
         document.getElementById("b5").disabled = true;
         flag = 1;
     }
 }
 
 function mudarSimbolo6() {
-
     if (flag == 1) {
-        document.getElementById("b6").value = playerOne;
+        document.getElementById("b6").innerHTML = playerOne;
         document.getElementById("b6").disabled = true;
         flag = 0;
     }
     else {
-        document.getElementById("b6").value = playerTwo;
+        document.getElementById("b6").innerHTML = playerTwo;
         document.getElementById("b6").disabled = true;
         flag = 1;
     }
 }
 
 function mudarSimbolo7() {
-
     if (flag == 1) {
-        document.getElementById("b7").value = playerOne;
+        document.getElementById("b7").innerHTML = playerOne;
         document.getElementById("b7").disabled = true;
         flag = 0;
     }
     else {
-        document.getElementById("b7").value = playerTwo;
+        document.getElementById("b7").innerHTML = playerTwo;
         document.getElementById("b7").disabled = true;
         flag = 1;
     }
 }
 
 function mudarSimbolo8() {
-
     if (flag == 1) {
-        document.getElementById("b8").value = playerOne;
+        document.getElementById("b8").innerHTML = playerOne;
         document.getElementById("b8").disabled = true;
         flag = 0;
     }
     else {
-        document.getElementById("b8").value = playerTwo;
+        document.getElementById("b8").innerHTML = playerTwo;
         document.getElementById("b8").disabled = true;
         flag = 1;
     }
 }
 
 function mudarSimbolo9() {
-
     if (flag == 1) {
-        document.getElementById("b9").value = playerOne;
+        document.getElementById("b9").innerHTML = playerOne;
         document.getElementById("b9").disabled = true;
         flag = 0;
     }
     else {
-        document.getElementById("b9").value = playerTwo;
+        document.getElementById("b9").innerHTML = playerTwo;
         document.getElementById("b9").disabled = true;
         flag = 1;
     }
 }
 
+/* --------- ATÉ AQUI TUDO OK -----------*/
 
 /* -------  APENAS PARA SE BASEAR ------- */
 // flag
