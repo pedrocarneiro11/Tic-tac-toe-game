@@ -1,5 +1,16 @@
 const statusDisplay = document.querySelector('.gameStatus');
 
+const winningConditions = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [0, 4, 8],
+    [2, 4, 6]
+]; 
+
 let gameActive = true;
 
 let playerOne = "X";
@@ -137,9 +148,55 @@ function mudarSimbolo9() {
     }
 }
 
-/* --------- ATÉ AQUI TUDO OK -----------*/
+/* --------- ATÉ AQUI TUDO OK -----------*/   
 
-/* -------  APENAS PARA SE BASEAR ------- */
+/* 
+  0 0 0
+  0 0 0
+  0 0 0
+
+Arrays com as condicoes de vitória 
+
+1 1 1   1 0 0  1 0 0
+0 0 0   1 0 0  0 1 0
+0 0 0   1 0 0  0 0 1
+
+0 0 0   0 1 0  0 0 1
+1 1 1   0 1 0  0 1 0
+0 0 0   0 1 0  1 0 0
+
+0 0 0   0 0 1 
+0 0 0   0 0 1
+1 1 1   0 0 1  
+
+    */
+
+/* Validacao de vitoria */
+function validarVitoria() {
+    let vitoria = false;
+    const array = [b1, b2, b3, b4, b5, b6, b7, b8, b9];
+    
+}
+
+/* Botão restart do jogo  OK */
+function restart() {
+    location.reload();
+    b1 = document.getElementById("b1").value = " ";
+    b2 = document.getElementById("b2").value = " ";
+    b3 = document.getElementById("b3").value = " ";
+    b4 = document.getElementById("b4").value = " ";
+    b5 = document.getElementById("b5").value = " ";
+    b6 = document.getElementById("b6").value = " ";
+    b7 = document.getElementById("b7").value = " ";
+    b8 = document.getElementById("b8").value = " ";
+    b9 = document.getElementById("b9").value = " ";
+}
+
+
+
+
+/* 
+   <-------  APENAS PARA SE BASEAR -------> 
 // flag
 
 function myfunc_4() {
@@ -246,42 +303,4 @@ function myfunc_11() {
     }
 }
 
-    /* 
-Arrays com as condicoes de vitória 
-
-  0 1 2
-  3 4 5
-  6 7 8
-
-    */
-  const winningConditions = [
-    [0, 1, 2],
-    [3, 4, 5],
-    [6, 7, 8],
-    [0, 3, 6],
-    [1, 4, 7],
-    [2, 5, 8],
-    [0, 4, 8],
-    [2, 4, 6]
-];  
-
-
-/* Validacao de vitoria */
-function validarVitoria() {
-    let vitoria = false;
-}
-
-/* Botão restart do jogo  OK */
-function restart() {
-    location.reload();
-    b1 = document.getElementById("b1").value = " ";
-    b2 = document.getElementById("b2").value = " ";
-    b3 = document.getElementById("b3").value = " ";
-    b4 = document.getElementById("b4").value = " ";
-    b5 = document.getElementById("b5").value = " ";
-    b6 = document.getElementById("b6").value = " ";
-    b7 = document.getElementById("b7").value = " ";
-    b8 = document.getElementById("b8").value = " ";
-    b9 = document.getElementById("b9").value = " ";
-}
-
+*/
