@@ -352,16 +352,20 @@ function validarVitoria() {
     }
 }
 
-/* criar uma terceira função, e colocar um delay para aparecer a mensagem de vitoria */
+/* criar uma terceira função, e colocar um delay para aparecer a mensagem de vitoria OK*/
 
-function vencedor() {
-    if (vitoria == true) {
-        if (player == 1) {
-            window.alert("Jogador 1 venceu!!");
-        } else if (player == 2) {
-            window.alert("Jogador 2 venceu!!");
+/*MENSAGEM ESTA DEMORANDO PARA PODER SER FECHADA*/
+
+async function vencedor() {
+    setTimeout(() => {
+        if (vitoria == true) {
+            if (player == 1) {
+                window.alert("Jogador 1 venceu!!");
+            } else if (player == 2) {
+                window.alert("Jogador 2 venceu!!");
+            }
         }
-    }  
+    }, 1000)  
 }
 
 
