@@ -365,7 +365,7 @@ async function vencedor() {
                 window.alert("Jogador 2 venceu!!");
             }
         }
-    }, 1000)  
+    }, 800)  
 }
 
 
