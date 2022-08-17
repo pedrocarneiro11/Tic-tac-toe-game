@@ -8,6 +8,8 @@ let playerTwo = "O";
 
 var flag = 1;
 
+var player;
+
 tabuleiro = document.getElementsByClassName("tabuleiro");
 
 // funções para mudar o simbolo
@@ -134,109 +136,109 @@ function validarVitoria() {
     (document.getElementById("b2").innerHTML == playerOne) &&
     (document.getElementById("b3").innerHTML == playerOne)) {
         vitoria = true;
+        player = 1;
         document.getElementById("b4").disabled = true;
         document.getElementById("b5").disabled = true;
         document.getElementById("b6").disabled = true;
         document.getElementById("b7").disabled = true;
         document.getElementById("b8").disabled = true;
         document.getElementById("b9").disabled = true;
-        window.alert("Jogador 1 venceu!!");
 
     } else if ((document.getElementById("b1").innerHTML == playerOne) && 
     (document.getElementById("b4").innerHTML == playerOne) &&
     (document.getElementById("b7").innerHTML == playerOne)) {
         vitoria = true;
+        player = 1;
         document.getElementById("b2").disabled = true;
         document.getElementById("b3").disabled = true;
         document.getElementById("b5").disabled = true;
         document.getElementById("b6").disabled = true;
         document.getElementById("b8").disabled = true;
         document.getElementById("b9").disabled = true;
-        window.alert("Jogador 1 venceu!!");
 
     } else if ((document.getElementById("b1").innerHTML == playerOne) && 
     (document.getElementById("b5").innerHTML == playerOne) &&
     (document.getElementById("b9").innerHTML == playerOne)) {
         vitoria = true;
+        player = 1;
         document.getElementById("b2").disabled = true;
         document.getElementById("b3").disabled = true;
         document.getElementById("b4").disabled = true;
         document.getElementById("b6").disabled = true;
         document.getElementById("b7").disabled = true;
         document.getElementById("b8").disabled = true;
-        window.alert("Jogador 1 venceu!!");
 
     } else if ((document.getElementById("b4").innerHTML == playerOne) && 
     (document.getElementById("b5").innerHTML == playerOne) &&
     (document.getElementById("b6").innerHTML == playerOne)) {
         vitoria = true;
+        player = 1;
         document.getElementById("b1").disabled = true;
         document.getElementById("b2").disabled = true;
         document.getElementById("b3").disabled = true;
         document.getElementById("b7").disabled = true;
         document.getElementById("b8").disabled = true;
         document.getElementById("b9").disabled = true;
-        window.alert("Jogador 1 venceu!!");
 
     } else if ((document.getElementById("b2").innerHTML == playerOne) && 
     (document.getElementById("b5").innerHTML == playerOne) &&
     (document.getElementById("b8").innerHTML == playerOne)) {
         vitoria = true;
+        player = 1;
         document.getElementById("b1").disabled = true;
         document.getElementById("b3").disabled = true;
         document.getElementById("b4").disabled = true;
         document.getElementById("b6").disabled = true;
         document.getElementById("b7").disabled = true;
         document.getElementById("b9").disabled = true;
-        window.alert("Jogador 1 venceu!!");
 
     } else if ((document.getElementById("b2").innerHTML == playerOne) && 
     (document.getElementById("b5").innerHTML == playerOne) &&
     (document.getElementById("b8").innerHTML == playerOne)) {
         vitoria = true;
+        player = 1;
         document.getElementById("b1").disabled = true;
         document.getElementById("b3").disabled = true;
         document.getElementById("b4").disabled = true;
         document.getElementById("b6").disabled = true;
         document.getElementById("b7").disabled = true;
         document.getElementById("b9").disabled = true;
-        window.alert("Jogador 1 venceu!!");
 
     } else if ((document.getElementById("b3").innerHTML == playerOne) && 
     (document.getElementById("b5").innerHTML == playerOne) &&
     (document.getElementById("b7").innerHTML == playerOne)) {
         vitoria = true;
+        player = 1;
         document.getElementById("b1").disabled = true;
         document.getElementById("b2").disabled = true;
         document.getElementById("b4").disabled = true;
         document.getElementById("b6").disabled = true;
         document.getElementById("b8").disabled = true;
         document.getElementById("b9").disabled = true;
-        window.alert("Jogador 1 venceu!!");
 
     } else if ((document.getElementById("b7").innerHTML == playerOne) && 
     (document.getElementById("b8").innerHTML == playerOne) &&
     (document.getElementById("b9").innerHTML == playerOne)) {
         vitoria = true;
+        player = 1;
         document.getElementById("b1").disabled = true;
         document.getElementById("b2").disabled = true;
         document.getElementById("b3").disabled = true;
         document.getElementById("b4").disabled = true;
         document.getElementById("b5").disabled = true;
         document.getElementById("b6").disabled = true;
-        window.alert("Jogador 1 venceu!!"); 
 
     } else if ((document.getElementById("b3").innerHTML == playerOne) && 
     (document.getElementById("b6").innerHTML == playerOne) &&
     (document.getElementById("b9").innerHTML == playerOne)) {
         vitoria = true;
+        player = 1;
         document.getElementById("b1").disabled = true;
         document.getElementById("b2").disabled = true;
         document.getElementById("b4").disabled = true;
         document.getElementById("b5").disabled = true;
         document.getElementById("b7").disabled = true;
         document.getElementById("b8").disabled = true;
-        window.alert("Jogador 1 venceu!!"); 
     }
                    /* <---------- PLAYER 2 -----------------> */
 
@@ -244,111 +246,124 @@ function validarVitoria() {
     (document.getElementById("b2").innerHTML == playerTwo) &&
     (document.getElementById("b3").innerHTML == playerTwo)) {
         vitoria = true;
+        player = 2;
         document.getElementById("b4").disabled = true;
         document.getElementById("b5").disabled = true;
         document.getElementById("b6").disabled = true;
         document.getElementById("b7").disabled = true;
         document.getElementById("b8").disabled = true;
         document.getElementById("b9").disabled = true;
-        window.alert("Jogador 2 venceu!!");
 
     } else if ((document.getElementById("b1").innerHTML == playerTwo) && 
     (document.getElementById("b4").innerHTML == playerTwo) &&
     (document.getElementById("b7").innerHTML == playerTwo)) {
         vitoria = true;
+        player = 2;
         document.getElementById("b2").disabled = true;
         document.getElementById("b3").disabled = true;
         document.getElementById("b5").disabled = true;
         document.getElementById("b6").disabled = true;
         document.getElementById("b8").disabled = true;
         document.getElementById("b9").disabled = true;
-        window.alert("Jogador 2 venceu!!");
 
     } else if ((document.getElementById("b1").innerHTML == playerTwo) && 
     (document.getElementById("b5").innerHTML == playerTwo) &&
     (document.getElementById("b9").innerHTML == playerTwo)) {
         vitoria = true;
+        player = 2;
         document.getElementById("b2").disabled = true;
         document.getElementById("b3").disabled = true;
         document.getElementById("b4").disabled = true;
         document.getElementById("b6").disabled = true;
         document.getElementById("b7").disabled = true;
         document.getElementById("b8").disabled = true;
-        window.alert("Jogador 2 venceu!!");
 
     } else if ((document.getElementById("b4").innerHTML == playerTwo) && 
     (document.getElementById("b5").innerHTML == playerTwo) &&
     (document.getElementById("b6").innerHTML == playerTwo)) {
         vitoria = true;
+        player = 2;
         document.getElementById("b1").disabled = true;
         document.getElementById("b2").disabled = true;
         document.getElementById("b3").disabled = true;
         document.getElementById("b7").disabled = true;
         document.getElementById("b8").disabled = true;
         document.getElementById("b9").disabled = true;
-        window.alert("Jogador 2 venceu!!");
 
     } else if ((document.getElementById("b2").innerHTML == playerTwo) && 
     (document.getElementById("b5").innerHTML == playerTwo) &&
     (document.getElementById("b8").innerHTML == playerTwo)) {
         vitoria = true;
+        player = 2;
         document.getElementById("b1").disabled = true;
         document.getElementById("b3").disabled = true;
         document.getElementById("b4").disabled = true;
         document.getElementById("b6").disabled = true;
         document.getElementById("b7").disabled = true;
         document.getElementById("b9").disabled = true;
-        window.alert("Jogador 2 venceu!!");
 
     } else if ((document.getElementById("b2").innerHTML == playerTwo) && 
     (document.getElementById("b5").innerHTML == playerTwo) &&
     (document.getElementById("b8").innerHTML == playerTwo)) {
         vitoria = true;
+        player = 2;
         document.getElementById("b1").disabled = true;
         document.getElementById("b3").disabled = true;
         document.getElementById("b4").disabled = true;
         document.getElementById("b6").disabled = true;
         document.getElementById("b7").disabled = true;
         document.getElementById("b9").disabled = true;
-        window.alert("Jogador 2 venceu!!");
 
     } else if ((document.getElementById("b3").innerHTML == playerTwo) && 
     (document.getElementById("b5").innerHTML == playerTwo) &&
     (document.getElementById("b7").innerHTML == playerTwo)) {
         vitoria = true;
+        player = 2;
         document.getElementById("b1").disabled = true;
         document.getElementById("b2").disabled = true;
         document.getElementById("b4").disabled = true;
         document.getElementById("b6").disabled = true;
         document.getElementById("b8").disabled = true;
         document.getElementById("b9").disabled = true;
-        window.alert("Jogador 2 venceu!!");
 
     } else if ((document.getElementById("b7").innerHTML == playerTwo) && 
     (document.getElementById("b8").innerHTML == playerTwo) &&
     (document.getElementById("b9").innerHTML == playerTwo)) {
         vitoria = true;
+        player = 2;
         document.getElementById("b1").disabled = true;
         document.getElementById("b2").disabled = true;
         document.getElementById("b3").disabled = true;
         document.getElementById("b4").disabled = true;
         document.getElementById("b5").disabled = true;
         document.getElementById("b6").disabled = true;
-        window.alert("Jogador 2 venceu!!"); 
 
     } else if ((document.getElementById("b3").innerHTML == playerTwo) && 
     (document.getElementById("b6").innerHTML == playerTwo) &&
     (document.getElementById("b9").innerHTML == playerTwo)) {
         vitoria = true;
+        player = 2;
         document.getElementById("b1").disabled = true;
         document.getElementById("b2").disabled = true;
         document.getElementById("b4").disabled = true;
         document.getElementById("b5").disabled = true;
         document.getElementById("b7").disabled = true;
         document.getElementById("b8").disabled = true;
-        window.alert("Jogador 2 venceu!!"); 
     }
 }
+
+/* criar uma terceira função, e colocar um delay para aparecer a mensagem de vitoria */
+
+function vencedor() {
+    if (vitoria == true) {
+        if (player == 1) {
+            window.alert("Jogador 1 venceu!!");
+        } else if (player == 2) {
+            window.alert("Jogador 2 venceu!!");
+        }
+    }   
+} 
+
 
 /* Botão restart do jogo */
 
