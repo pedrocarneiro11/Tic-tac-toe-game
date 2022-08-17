@@ -361,8 +361,8 @@ function vencedor() {
         } else if (player == 2) {
             window.alert("Jogador 2 venceu!!");
         }
-    }   
-} 
+    }  
+}
 
 
 /* Botão restart do jogo */
